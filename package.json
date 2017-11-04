@@ -1,0 +1,67 @@
+{
+  "name": "deployment-migration-tracker",
+  "version": "1.0.0",
+  "description": "An application tracking the migration of deployments across BOSH's.",
+  "license": "Apache-2.0",
+  "contributors": [
+    "Kamath, Prasad <prasad.kamath01@sap.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kamath-prasad/deployment-migration-tracker.git"
+  },
+  "dependencies": {
+    "basic-auth": "1.0.4",
+    "bluebird": "3.4.0",
+    "body-parser": "1.15.1",
+    "express": "4.13.4",
+    "express-interceptor": "1.2.0",
+    "express-jwt": "5.0.0",
+    "express-session": "1.13.0",
+    "js-yaml": "3.6.1",
+    "jsonwebtoken": "7.1.9",
+    "lodash": "4.13.1",
+    "moment": "2.13.0",
+    "mongoose": "4.8.2",
+    "morgan": "1.6.1",
+    "request": "2.69.0",
+    "rxjs": "5.4.0",
+    "session-file-store": "0.2.0",
+    "uuid": "2.0.2",
+    "winston": "2.2.0",
+    "winston-syslog": "1.2.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "docdash": "^0.3.0",
+    "esformatter": "^0.10.0",
+    "esformatter-braces": "^1.2.1",
+    "esformatter-dot-notation": "^1.3.1",
+    "esformatter-quote-props": "^2.0.0",
+    "esformatter-quotes": "^1.1.0",
+    "esformatter-semicolons": "^1.1.2",
+    "esformatter-use-strict": "^3.0.0",
+    "esformatter-var-each": "^2.1.0",
+    "isparta": "^4.0.0",
+    "js-beautify": "1.6.14",
+    "jsdoc": "^3.4.0",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "mocha": "^2.5.3",
+    "nock": "^8.0.0",
+    "proxyquire": "^1.7.9",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0",
+    "aws-sdk": "2.35.0"
+  },
+  "engines": {
+    "node": ">= 6.2.1"
+  },
+  "scripts": {
+    "start": "node ./bin/server",
+    "jshint": "jshint --exclude coverage,docs,node_modules,public  --reporter=node_modules/jshint-stylish .",
+    "jsformat": "js-beautify -r *.js -r lib/*.js -r routes/*.js -r test/**/*.js -r test/*.js"
+  }
+}
