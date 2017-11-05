@@ -14,8 +14,3 @@ var server = http.createServer(app);
 server.listen(port);
 
 console.log(`Listening on port ${port}\n`);
-var services = process.env.VCAP_SERVICES;
-if(services!=null)
-{
- console.log(JSON.parse(services));
-}
